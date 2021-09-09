@@ -1,3 +1,4 @@
+@Test
 Feature: Pesquisar sobre o SuperGet no site da Getnet
 
      Background: Acesso a aplicação da Getnet
