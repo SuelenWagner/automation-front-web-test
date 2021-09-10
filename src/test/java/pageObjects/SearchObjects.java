@@ -41,11 +41,6 @@ public class SearchObjects extends BasicConfiguration {
         return driver.findElement(By.cssSelector("button > span"));
     }
 
-    public WebElement getLabelAppSuperget() {
-        expectVisibilityByXpath("//h2[contains(text(),'App SuperGet')]");
-        return driver.findElement(By.xpath("//h2[contains(text(),'App SuperGet')]"));
-    }
-
     public WebElement getLinkSupergetAccountInfo() {
         expectVisibilityByCssSelector("a:nth-child(10) > h3");
         return driver.findElement(By.cssSelector("a:nth-child(10) > h3"));

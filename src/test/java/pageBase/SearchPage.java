@@ -16,12 +16,14 @@ public class SearchPage extends BasicConfiguration {
     public SearchPage accessHelpCenter() {
         pageObjects.getBtnHelp().click();
         pageObjects.getBtnHelpCenter().click();
+        Assert.assertEquals("Getnet", pageObjects.getLabelGetnet().getText());
         waitTo(2);
         return this;
     }
 
     public SearchPage searchProduct(String productName) {
         pageObjects.getFieldSearch().sendKeys(productName);
+        Assert.assertEquals("Está com dúvidas?", pageObjects.getLabelQuestions().getText());
         waitTo(1);
         return this;
     }
